@@ -1,0 +1,32 @@
+* {
+    /* border: 1px solid red; */
+}
+
+body {
+    margin:0;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+}
+
+.header img {
+    width:200px;
+    height:auto;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    gap: 20px;
+    padding-right:20px;
+    align-items: center;
+}
+
+.header ul li {
+    color: white;
+    font-weight: bold;
+}
