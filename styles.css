@@ -6,10 +6,12 @@ body {
     margin:0;
 }
 
+/* Header */
+
 .header {
     display: flex;
     background-color: black;
-    padding: 15px;
+    padding: 15px 0 15px 30px;
 }
 
 .header img {
@@ -29,4 +31,31 @@ body {
 .header ul li {
     color: white;
     font-weight: bold;
+}
+
+/* Hero */
+
+.hero {
+    background-color: black;
+    display: flex;
+    padding: 50px;
+}
+
+.hero h1 {
+    color:white;
+    margin-top:50px;
+}
+
+.hero p {
+    color: white;
+}
+
+.text-content {
+    display:flex;
+    flex-direction: column;
+    flex:0.5 1 0;
+}
+
+.hero img {
+
 }
