@@ -1,5 +1,6 @@
 * {
     /* border: 1px solid red; */
+    box-sizing: border-box;
 }
 
 body {
@@ -8,10 +9,17 @@ body {
 
 /* Header */
 
-.header {
+.header-container {
     display: flex;
+    justify-content: center;
     background-color: black;
-    padding: 15px 0 15px 30px;
+    padding:20px;
+}
+
+.header {
+    max-width: 1100px;
+    flex:1;
+    display: flex;
 }
 
 .header img {
@@ -35,15 +43,24 @@ body {
 
 /* Hero */
 
-.hero {
-    background-color: black;
+.hero-container {
     display: flex;
-    padding: 50px;
+    justify-content: center;
+    background-color: black;
+    padding:20px;
+}
+
+.hero {
+    max-width: 1100px;
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 .hero h1 {
     color:white;
-    margin-top:50px;
 }
 
 .hero p {
@@ -57,5 +74,7 @@ body {
 }
 
 .hero img {
-
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
 }
