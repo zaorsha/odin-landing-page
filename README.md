@@ -9,3 +9,4 @@ Known-Bugs:
 To-Do:
 - add box shadow to header
 - move hero background image down a few pixels to show top of structure
+- wrap content so that it drops from 4 wide to 2 then 1
