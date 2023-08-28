@@ -14,7 +14,6 @@ body {
     justify-content: center;
     background-color: black;
     padding:20px 50px 20px 50px;
-
 }
 
 .header {
@@ -40,6 +39,10 @@ body {
 .header ul li {
     color: white;
     font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
 }
 
 /* Hero */
@@ -125,7 +128,6 @@ body {
     gap:30px;
     flex-wrap: wrap;
     flex-grow:1;
-
 }
 
 .info-sub {
@@ -147,6 +149,7 @@ body {
 .info-sub p {
     font-size: 18px;
     margin-top:10px;
+    text-align: center;
 }
 
 .info-sub hr {
@@ -188,14 +191,28 @@ body {
 /* CTA */
 
 .cta-container {
+    position: relative;
     display: flex;
     justify-content: center;
-    background-color: rgb(238, 238, 238);
+    min-height: 300px;
     padding:20px 50px 20px 50px;
 }
 
+.cta-container::before {
+    content: "";
+    background-image: url(images/hero-img.jpeg);
+    background-size:cover;
+    background-position: center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .cta {
-    background-color: black;
     padding:20px 50px 20px 50px;
     max-width: 700px;
     display: flex;
@@ -204,13 +221,14 @@ body {
 }
 
 .cta-text h3 {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 40px;
     margin:0;
 }
 
 .cta-text p {
-    color: white;
+    color: black;
+    font-size: 18px;
     margin:0;
 }
 
